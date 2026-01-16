@@ -44,7 +44,8 @@ export const portfolioData = {
             description: [
                 "Created a real-time auction platform with secure user auth and bidding dashboard.",
                 "Built using React.js, Node.js, Spring Boot, and MongoDB."
-            ]
+            ],
+            link: ""
         },
         {
             title: "QKart Frontend",
@@ -53,9 +54,9 @@ export const portfolioData = {
             description: [
                 "Developed secure JWT authentication with persistent sessions and built interactive cart/checkout system (login/signup, add/remove items, dynamic pricing, API integration).",
                 "Implemented RESTful API integration with Express.js/MongoDB backend and responsive Material-UI frontend (product display, themed grids, mobile-friendly design).",
-                "Deployed full-stack solution using Vercel (frontend) and Render (backend).",
-                "Link: https://qkartfrontendviraat.vercel.app/"
-            ]
+                "Deployed full-stack solution using Vercel (frontend) and Render (backend)."
+            ],
+            link: "https://qkartfrontendviraat.vercel.app/"
         },
         {
             title: "Bank Management System",
@@ -63,9 +64,9 @@ export const portfolioData = {
             tech: "Java Spring Boot, MongoDB, Spring Security",
             description: [
                 "Developed a Bank Management System with RESTful APIs using Spring Boot and MongoDB, enabling account creation, fund transfers, and transaction history with Spring Data MongoDB for efficient document-based data storage.",
-                "Implemented secure API endpoints with Spring Security and JWT, ensuring authorized access and robust error handling.",
-                "API Docs: https://bank-m-s.onrender.com/swagger-ui/index.html"
-            ]
+                "Implemented secure API endpoints with Spring Security and JWT, ensuring authorized access and robust error handling."
+            ],
+            link: "https://bank-m-s.onrender.com/swagger-ui/index.html"
         }
     ],
     skills: {

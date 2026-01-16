@@ -13,22 +13,40 @@ const ProjectsCard = () => {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {projects.map((project, index) => (
-                    <div key={index} className="group relative bg-zinc-800/30 rounded-xl p-4 border border-zinc-700/30 hover:bg-zinc-800/50 hover:border-zinc-600 transition-all">
-                        <div className="flex justify-between items-start mb-2">
-                            <h4 className="font-bold text-zinc-100">{project.title}</h4>
-                            {project.description.some(d => d.includes("Link:")) && (
-                                <ArrowUpRight size={16} className="text-zinc-500 group-hover:text-emerald-400 transition-colors" />
-                            )}
+                {projects.map((project, index) => {
+                    const CardContent = () => (
+                        <>
+                            <div className="flex justify-between items-start mb-2">
+                                <h4 className="font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors">{project.title}</h4>
+                                {project.link && (
+                                    <ArrowUpRight size={16} className="text-zinc-500 group-hover:text-emerald-400 transition-colors group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                                )}
+                            </div>
+
+                            <p className="text-xs text-zinc-500 font-mono mb-3">{project.tech}</p>
+
+                            <p className="text-sm text-zinc-400 line-clamp-3">
+                                {project.description[0]}
+                            </p>
+                        </>
+                    );
+
+                    return project.link ? (
+                        <a
+                            key={index}
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative bg-zinc-800/30 rounded-xl p-4 border border-zinc-700/30 hover:bg-zinc-800/50 hover:border-zinc-600 transition-all block h-full"
+                        >
+                            <CardContent />
+                        </a>
+                    ) : (
+                        <div key={index} className="group relative bg-zinc-800/30 rounded-xl p-4 border border-zinc-700/30 hover:bg-zinc-800/50 hover:border-zinc-600 transition-all h-full">
+                            <CardContent />
                         </div>
-
-                        <p className="text-xs text-zinc-500 font-mono mb-3">{project.tech}</p>
-
-                        <p className="text-sm text-zinc-400 line-clamp-3">
-                            {project.description[0]}
-                        </p>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </BentoItem>
     );
