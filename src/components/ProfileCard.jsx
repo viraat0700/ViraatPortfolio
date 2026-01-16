@@ -16,10 +16,10 @@ const ProfileCard = () => {
                     </span>
                 </div>
 
-                <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
                     {personalInfo.name}
                 </h1>
-                <h2 className="text-xl md:text-2xl text-zinc-400 font-light mb-6">
+                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-zinc-400 font-light mb-6">
                     {personalInfo.title}
                 </h2>
 

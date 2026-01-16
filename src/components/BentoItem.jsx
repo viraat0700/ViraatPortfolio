@@ -12,7 +12,7 @@ const BentoItem = ({ children, className = "", span = "", ...props }) => {
             variants={item}
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className={`bg-zinc-900 border border-zinc-800 rounded-3xl p-6 overflow-hidden relative group hover:border-zinc-600 transition-colors duration-300 ${span} ${className}`}
+            className={`bg-zinc-900 border border-zinc-800 rounded-3xl p-5 sm:p-6 lg:p-8 overflow-hidden relative group hover:border-zinc-600 transition-colors duration-300 ${span} ${className}`}
             {...props}
         >
             {children}

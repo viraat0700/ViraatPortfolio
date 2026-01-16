@@ -9,7 +9,7 @@ import EducationCard from './components/EducationCard';
 
 function App() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white selection:bg-emerald-500/30 selection:text-emerald-500 pb-20 pt-10 px-4 md:px-8">
+    <div className="min-h-screen bg-zinc-950 text-white selection:bg-emerald-500/30 selection:text-emerald-500 pb-20 pt-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32">
 
       {/* Background decoration */}
       <div className="fixed inset-0 cursor-default pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800/20 via-zinc-950 to-zinc-950"></div>

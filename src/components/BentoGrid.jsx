@@ -17,7 +17,7 @@ const BentoGrid = ({ children, className = "" }) => {
             variants={container}
             initial="hidden"
             animate="show"
-            className={`grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto p-4 ${className}`}
+            className={`grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-[1600px] mx-auto ${className}`}
         >
             {children}
         </motion.div>
